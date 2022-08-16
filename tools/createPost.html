@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NotePen - New Pen</title>
+    <link rel="stylesheet" href="../styling/createPost.css" />
+    <script src="../node/jquery/dist/jquery.js"></script>
+    <script src="../js/createPen.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <textarea rows="20" cols="75" placeholder="Type the content" id="textarea-content"></textarea>
+        </div>
+        <div class="description">
+            <input type="text" name="description-input" id="description-input" value="" placeholder="Type Description" />
+        </div>
+        <div class="child-container">
+            <div id="console">
+                <p style="color:yellow;" id="console-line">Check: </p>
+            </div>
+            <div class="publish-pen">
+                <button onclick="publish()">Publish the Pen</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

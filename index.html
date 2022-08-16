@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NotePen</title>
+    <link rel="stylesheet" href="styling/index.css">
+    <script src="../node/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <div style="text-align: left; margin-left: 15px; margin-right: 15px;"
+        class="container0">
+        <div class="header">
+            <h1>NotePen</h1>
+            <div style="text-align: right; position: inherit;" class="buttons">
+                <button>Contact</button>
+                <button>About</button>
+            </div>
+        </div>
+        <hr style="border: 2.5px solid white; border-radius: 2px;">
+    </div>
+    
+    <div style="text-align: center;" class="error-displayer-form">
+        <span id="error-displayer"></span>
+    </div>
+    
+    <div style="margin-top: 15%;" class="fill-out-form">
+        <div class="login-form">
+            <div class="login-form-content">
+                <br>
+                <h3 class="login-form-title">Login</h3>
+                <br>
+                <span>Email or Name:</span>
+                <br>
+                <input type="text" name="name-input" id="name-input" placeholder="Email or Name" />
+                <br>
+                <span>Password:</span>
+                <br>
+                <input type="password" name="password-inpt" id="password-inpt" placeholder="Your Password" />
+                <br>
+                <input type="checkbox" onclick="showPassword()">Show Password
+                <br>
+                <button type="submit" name="submit-login" id="submit-login">Login</button>
+            </div>
+        </div>
+        <div style="margin-top: 3%;" class="no-account-form">
+            <span>You dont have an account? <a href="../newAccount.html">Create Account!</a></span>
+        </div>
+    </div>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

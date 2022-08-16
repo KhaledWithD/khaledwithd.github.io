@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html { background: #2868ff/* #30e176 */; }
+
+button { cursor: pointer; }
+
+/* <HEADER> */
+
+.header {
+    display: grid;
+    position: inherit;
+    grid-auto-flow: column;
+    align-items: baseline;
+}
+
+.header .buttons button {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #0059ff;
+}
+
+.buttons button:hover {
+    background: #387cfc;
+}
+
+.buttons button:active {
+    transform: scale(0.98);
+}
+
+.header h1 { /* <- TITLE */
+    color: white/* #02ccff */;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER BAR */
+
+.header-bar {
+    position: inherit;
+    grid-auto-flow: column;
+    align-items: baseline;
+    column-gap: 10px;
+}
+
+/* HEADER BAR */
+
+/* PROFILE SECTION */
+.profile-container {
+    position: inherit;
+    text-align: right;
+    column-gap: 30px;
+}
+
+.profile-username {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 900;
+}
+
+.profile-picture { width: 40px; height: 40px; cursor: pointer; }
+
+/* PROFILE SECTION */
+
+/* <HEADER> */
+
+/* POST CONTENT */
+.post-content {
+    background: white;
+    width: 380px;
+    height: 490px;/* 470px; */
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.post-box { margin-top: 25px; padding: 2.5px; word-break: break-all; }
+
+.post-description {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: -0.1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-frame {
+    display: flex;
+    background: black;
+    width: 370px;
+    height: 370px;
+    position: inherit;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.post-frame-content {
+    margin: 10px 10px 10px 10px;
+    color: white;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-box-buttons button {
+    height: 25px;
+    border-radius: 2.5px;
+    border-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #387cfc;
+}
+
+.post-box-buttons button:hover {
+    background: #ccf4fe;
+}
+
+.post-box-buttons button:active {
+    transform: scale(0.985);
+}
+
+.post-information-written {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-content h6 span {
+    font-weight: 800;
+    color: #2868ff;
+}
+/* POST CONTENT */

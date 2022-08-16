@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NotePen</title>
+    <link rel="stylesheet" href="styling/newAccount.css">
+    <script src="../node/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <div style="text-align: left; margin-left: 15px; margin-right: 15px;"
+        class="container0">
+        <div class="header">
+            <h1>NotePen</h1>
+        </div>
+        <hr style="border: 2.5px solid white; border-radius: 2px;">
+    </div>
+    
+    <div style="text-align: center;" class="error-displayer-form">
+        <span id="error-displayer"></span>
+    </div>
+    
+    <div style="margin-top: 15%;" class="fill-out-form">
+        <div class="register-form">
+            <div class="register-form-content">
+                <br>
+                <h3 class="register-form-title">Create new account</h3>
+                <br>
+                <span>Email:</span>
+                <br>
+                <input type="text" name="email-input" id="email-input" placeholder="Email" />
+                <br>
+                <span>Username:</span>
+                <br>
+                <input type="text" name="name-input" id="name-input" placeholder="Username" />
+                <br>
+                <span>Password:</span>
+                <br>
+                <input type="password" name="password-inpt" id="password-inpt" placeholder="Your Password" />
+                <br>
+                <input type="checkbox" onclick="showPassword()">Show Password
+                <br>
+                <button type="submit" name="submit-register" id="submit-register">Create new account</button>
+            </div>
+        </div>
+        <div style="margin-top: 3%;" class="have-account-form">
+            <span>You have already a account? <a href="../index.html">Login!</a></span>
+        </div>
+    </div>
+    <script src="js/newAccount.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

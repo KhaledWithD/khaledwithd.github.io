@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html { background: #2868ff/* #30e176 */; }
+
+button { cursor: pointer; }
+
+/* HEADER */
+
+.header {
+    display: grid;
+    position: inherit;
+    grid-auto-flow: column;
+    align-items: baseline;
+}
+
+.header .buttons button {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #0059ff;
+}
+
+.buttons button:hover {
+    background: #387cfc;
+}
+
+.buttons button:active {
+    transform: scale(0.98);
+}
+
+.header h1 { /* <- TITLE */
+    color: white/* #02ccff */;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+/* FILL OUT FORM */
+.register-form {
+    margin: auto; 
+    border: 1.5px solid white; 
+    width: 500px; 
+    height: 300px;
+    background: #005f77;
+}
+
+.register-form-content {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register-form-content > * { margin: 5px 0; }
+
+.register-form-content .register-form-title h3 { margin-top: 10px; color: black; }
+
+.register-form-content span {  }
+
+.register-form-content button, input {
+    border-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 3.5px;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register-form-content button:hover { background: #387cfc; }
+
+.register-form-content button:active { transform: scale(0.98); }
+
+/* FILL OUT FORM */
+
+/* NO ACCOUNT FORM */
+.have-account-form {
+    margin: auto;
+    border: 1.5px solid white; 
+    width: 500px;
+    height: 20px;
+    background: #005f77;
+    text-align: center;
+}
+
+.have-account-form span { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+/* NO ACCOUNT FORM */
+
+/* ERROR DISPLAYER */
+.error-displayer-form {
+    opacity: 0;
+    margin: auto;
+    width: 350px;
+    height: 20px;
+    position: absolute;
+    left: 32.5%;
+    border: 1px solid white;
+    background: #005f77;
+    border-radius: 5px;
+    top: 40%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#error-displayer {
+    color: yellow;
+    font-size: 17px;
+}
+/* ERROR DISPLAYeR */

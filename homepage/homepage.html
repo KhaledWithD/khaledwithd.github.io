@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NotePen</title>
+    <link rel="stylesheet" href="../styling/homepage.css">
+    <script src="../node/jquery/dist/jquery.js"></script>
+    <script src="../postEngine/post.loader.js"></script>
+    <script src="../postEngine/postAssets.js"></script>
+    <script src="../js/homepage.js"></script>
+</head>
+<body>
+    <span id="er"></span>
+    <div style="text-align: left; margin-left: 15px; margin-right: 15px;"
+        class="container0">
+        <div class="header">
+            <h1>NotePen</h1>
+            <div class="header-bar">
+                <div class="profile-container">
+                    <span class="profile-username" id="profile-username">$PROFILE_NAME</span>
+                    <a onclick="showTooltips()"><img class="profile-picture" id="profile-picture" src="../textures/profiletexture.png" /></a>
+                    <div id="tooltips">
+                        <button onclick="toPen()">New Pen</button>
+                        <button>Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border-radius: 5px;">
+    </div>
+    
+    <!-- <div class="post-container" id="post-container">
+        <div class="post-content" id="post-content">
+            <div class="post-box">
+                <div class="post-description">
+                    <p id="post-description" class="post-description">$DESCRIPTION</p>
+                </div>
+                <div class="post-frame">
+                    <p style="color: white;" id="post-frame-content" class="post-frame-content">
+                        $POST_FRAME_CONTENT
+                    </p>
+                </div>
+            </div>
+            <div class="post-box-buttons">
+                <button name="like-post-button">Like</button>
+                <button name="dislike-post-button">Dislike</button>
+                <button name="comment-post-button">Comment</button>
+                <button onclick='deleteThis("oa", "12")' id="delete-button" class="delete-button" style="border: 2px solid black; background-color: red;">Delete</button>
+            </div>
+            <div class="post-informations">
+                <h6 class="post-information-written">Upload-Date: <span id="post-upload-date">$UPLOAD_DATE</span> Creator: <span id="post-creator-name">$CREATOR_NAME</span></h6>
+            </div>
+        </div>
+    </div> -->
+    <script>
+        const profile_username = document.getElementById("profile-username");
+        profile_username.innerText = localStorage.getItem("username");
+    </script>
+</body>
+</html>
